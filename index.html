@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Login Page</title>
 </head>
 
 <body>
@@ -18,17 +18,17 @@
         </div>
         <div class="login-form">
                 
-            <form>
+            <form action="#">
                 <p>Welcome back</p>
                 <h2>Login to your account</h2>
 
                 <div class="inp">
                     <label class="text-title">Email</label><br>
-                    <input type="text" class = "input-box" placeholder="Jhon.snow@gmail.com"><br>
+                    <input type="email" id = "em" class = "input-box" placeholder="Jhon.snow@gmail.com"><br>
                 </div>
                 <div class="inp">
                     <label>Password</label><br>
-                    <input type="password" class = "input-box" placeholder="*************"><br>
+                    <input type="password" id = "pass" class = "input-box" placeholder="*************"><br>
                 </div>
                 <div class="space">
                 <div class="space-rem">
@@ -39,7 +39,8 @@
             </div>
              </div>
                 <div class="btn btn-log">
-                    <button>Login Now</button><br>
+                    <button type = "button" onclick="check()">Login Now</button><br>
+                    <p id = "error"></p>
                 </div>
                 <div class="btn btn-sign">
                     <button><i class="fab fa-google"></i>  or sign-in-with google</button>
@@ -50,6 +51,9 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
